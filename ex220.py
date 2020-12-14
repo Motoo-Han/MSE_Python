@@ -1,14 +1,11 @@
-#ex210
-def message1(): #매세지1은 A를 출력한다!
-    print("A") #라고 정의한다!
-
-def message2(): #매세지2는 B를 출력한다!
-    print("B") #라고 정의!
-
-def message3(): #매세지3를 정의내리자.
-    for i in range (3) : #0,1,2 세 번 반복동안,
-        message2() #B출력을 진행한다.
-        print("C") #그리고 C는 추가로 출력하자.
-    message1() #마지막으로 A 추가!
-
-message3() #깔끔!
+#ex220
+def print_max(a, b, c) : #a,b,c 세 개의 파라미터를 가지는 함수를 정의하자!
+    max_val = 0 #최대값 변수를 만들고, 0으로 할당!
+    if a > max_val : #만약 a값이 최대값 변수보다 크다면
+        max_val = a #최대값 변수를 a로 지정!
+    if b > max_val : #만약 b값이 최대값 변수보다 크다면
+        max_val = b #최대값 변수를 b로 지정!
+    if c > max_val : #만약 c값이 최대값 변수보다 크다면
+        max_val = c #최대값 변수를 c로 지정!
+    print(max_val) #최대값을 출력하자!
+print_max(3,4,8) #값 등장!
